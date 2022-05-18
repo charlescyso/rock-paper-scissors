@@ -46,21 +46,22 @@
             playerSelection = prompt('Pick a hand').toLowerCase();
             const computerSelection = computerPlay();
             console.log(playRound(playerSelection, computerSelection));
-            console.log(playerSelection);
-            console.log(computerSelection);
-            console.log(playerScore);
+            //console.log(playerSelection);
+            //console.log(computerSelection);
+            //console.log(playerScore);
         }
         if (playerScore > 2) {
             alert(win);
+            console.log(win);
         }   else {
             alert(lose);
+            console.log(lose);
         }
     }
 
     let playerScore = parseInt(0);
-    let win = 'You win!';
-    let lose = 'You lose!';
-    let tie = 'it\'s  a tie';
+    let win = 'You\'ve won the game!';
+    let lose = 'You\'ve lost the game!';
     const hands = ['rock', 'paper', 'scissors'];
     let playerSelection = '';
     
