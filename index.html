@@ -43,17 +43,23 @@
 
     function game() {
         for (let i = 0; i < 5; i++) {
-        playerSelection = prompt('Pick a hand')
-        const computerSelection = computerPlay();
-        console.log(playRound(playerSelection, computerSelection));
-        console.log(playerSelection);
-        console.log(computerSelection);
-        console.log(playerScore);
-    }}
+            playerSelection = prompt('Pick a hand').toLowerCase();
+            const computerSelection = computerPlay();
+            console.log(playRound(playerSelection, computerSelection));
+            console.log(playerSelection);
+            console.log(computerSelection);
+            console.log(playerScore);
+        }
+        if (playerScore > 2) {
+            alert(win);
+        }   else {
+            alert(lose);
+        }
+    }
 
     let playerScore = parseInt(0);
-    let win = 'you win';
-    let lose = 'you lose';
+    let win = 'You win!';
+    let lose = 'You lose!';
     let tie = 'it\'s  a tie';
     const hands = ['rock', 'paper', 'scissors'];
     let playerSelection = '';
