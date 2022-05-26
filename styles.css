@@ -4,5 +4,24 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    /* border: 1px solid red;; */
   }
 
+/* All with class of .flex has display of flex */
+.flex {
+    display: flex;
+}
+
+.maxWidthCenter {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flexGrow {
+    flex: 1;
+}
+
+.btn {
+    height: 257px;
+}
