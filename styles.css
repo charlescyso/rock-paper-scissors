@@ -4,11 +4,11 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-    border: 1px solid red;;
+    /* border: 1px solid red; */
   }
 
 /* All with class of .flex has display of flex */
-.flex {
+.displayFlex {
     display: flex;
 }
 
@@ -23,7 +23,20 @@ html {
 }
 
 .btn {
-    padding: 0;
-    margin: 0;
-    aspect-ratio: 1/1;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.score {
+    padding: 1em;
+}
+
+#title {
+    padding: 1em;
+}
+
+#response {
+    padding: 1em;
 }

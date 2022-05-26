@@ -8,17 +8,17 @@
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <h1 class="maxWidthCenter">Rock, Paper, Scissors</h1>
+    <h1 class="maxWidthCenter" id="title">Rock, Paper, Scissors</h1>
 
     <div class="maxWidthCenter" id="response">Click a button to play!</div>
 
-    <div class="maxWidthCenter buttonsContainer flex">
-        <button class="flex btn" id="rockBtn">Rock</button>
-        <button class="flex btn" id="paperBtn">Paper</button>
-        <button class="flex btn" id="scissorsBtn">Scissors</button>
+    <div class="buttonsContainer maxWidthCenter displayFlex">
+        <img class="btn" id="rockBtn" src="images/rock.png">
+        <img class="btn" id="paperBtn" src="images/paper.png">
+        <img class="btn" id="scissorsBtn" src="images/scissors.png">
     </div>
 
-    <div class="maxWidthCenter scoresContainer flex">
+    <div class="scoresContainer maxWidthCenter displayFlex">
         <div class="flex score" id="playerScore">Player Score: </div>
         <div class="flex score" id="computerScore">Computer Score: </div>
         <div class="flex score" id="tieScore">Tie(s): </div>
