@@ -95,9 +95,17 @@
 
     // The game 
     function game(playerHand) {
-        let playerSelection = playerHand;
-        let computerSelection = computerPlay();
-        playRound(playerSelection, computerSelection);
+        if (playerScore < 5 && computerScore < 5) {
+            let playerSelection = playerHand;
+            let computerSelection = computerPlay();
+            playRound(playerSelection, computerSelection);
+        }
+        if (playerScore == 5) {
+            response.textContent = 'Game over. You win!'
+        }
+        if (computerScore == 5) {
+            response.textContent = 'Game over. You lose!'
+        }
     }
 
     // Play the game after clicking button
