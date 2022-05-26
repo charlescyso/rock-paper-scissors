@@ -4,7 +4,7 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-    /* border: 1px solid red;; */
+    border: 1px solid red;;
   }
 
 /* All with class of .flex has display of flex */
@@ -18,10 +18,12 @@ html {
     text-align: center;
 }
 
-.flexGrow {
+.flex {
     flex: 1;
 }
 
 .btn {
-    height: 257px;
+    padding: 0;
+    margin: 0;
+    aspect-ratio: 1/1;
 }
