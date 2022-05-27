@@ -1,6 +1,10 @@
 /* Sets all box-sizing to border-box */
 html {
     box-sizing: border-box;
+    background: #F3F9D2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #63264A;
+    font-weight: bold;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -27,6 +31,10 @@ html {
     width: 100%;
     height: auto;
     padding: 1em;
+    border: 1em solid #C0D684;
+    border-radius: 50%;
+    margin: 0 1em;
+    background: #CBEAA6;
 }
 
 .score {
@@ -34,9 +42,9 @@ html {
 }
 
 #title {
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 }
 
 #response {
-    padding: 1em;
+    padding: 2em;
 }
