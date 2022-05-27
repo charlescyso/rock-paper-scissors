@@ -48,3 +48,7 @@ html {
 #response {
     padding: 2em;
 }
+
+.resultImage {
+    display: none;
+}

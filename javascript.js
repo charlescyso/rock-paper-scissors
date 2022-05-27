@@ -81,10 +81,12 @@ function game(playerHand) {
         playRound(playerSelection, computerSelection);
     }
     if (playerScore == 5) {
-        response.textContent = 'Game over. You win!'
+        response.textContent = 'Game over. You win!';
+        document.getElementById('winImage').style.display = "block";
     }
     if (computerScore == 5) {
         response.textContent = 'Game over. You lose!'
+        document.getElementById('loseImage').style.display = "block";
     }
 }
 
