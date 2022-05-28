@@ -7,6 +7,7 @@ let response = document.getElementById('response');
 let playerScoreResponse = document.getElementById('playerScore');
 let computerScoreResponse = document.getElementById('computerScore');
 let tieScoreResponse = document.getElementById('tieScore');
+let restartbtn = document.getElementById('restartBtn');
 
 let playerScore = 0;
 let computerScore = 0;
@@ -83,10 +84,13 @@ function game(playerHand) {
     if (playerScore == 5) {
         response.textContent = 'Game over. You win!';
         document.getElementById('winImage').style.display = "block";
+        restartBtn.style.display = "block";
+
     }
     if (computerScore == 5) {
         response.textContent = 'Game over. You lose!'
         document.getElementById('loseImage').style.display = "block";
+        restartBtn.style.display = "block";
     }
 }
 
@@ -99,4 +103,18 @@ paperBtn.addEventListener('click', () => {
 })
 scissorsBtn.addEventListener('click', () => {
     game('scissors');
+})
+
+// Restart game button
+restartBtn.addEventListener('click', () => {
+    response.textContent = 'Click a button to begin!';
+    document.getElementById('winImage').style.display = "none";
+    document.getElementById('loseImage').style.display = "none";
+    playerScore = 0;
+    computerScore = 0;
+    tieScore = 0;
+    playerScoreResponse.textContent = `Player Score: ${playerScore}`;
+    computerScoreResponse.textContent = `Computer Score: ${computerScore}`;
+    tieScoreResponse.textContent = `Tie(s): ${tieScore}`;
+    restartBtn.style.display = 'none';
 })

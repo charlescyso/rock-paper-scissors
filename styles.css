@@ -52,3 +52,8 @@ html {
 .resultImage {
     display: none;
 }
+
+#restartBtn {
+    display: none;
+    margin: 1em auto 2em;
+}
