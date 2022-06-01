@@ -11,6 +11,15 @@ html {
     /* border: 1px solid red; */
   }
 
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1);
+    filter:saturate(2);
+}
+
 /* All with class of .flex has display of flex */
 .displayFlex {
     display: flex;
@@ -35,6 +44,16 @@ html {
     border-radius: 50%;
     margin: 0 1em;
     background: #CBEAA6;
+    cursor: pointer;
+}
+
+#restartBtn {
+    background: #CBEAA6;
+    color: rgb(79, 79, 79);
+    padding: 1em;
+    border-radius: .5em;
+    border: 0.5em solid #C0D684;
+    cursor: pointer;
 }
 
 .score {

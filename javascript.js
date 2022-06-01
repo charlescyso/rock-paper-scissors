@@ -85,12 +85,18 @@ function game(playerHand) {
         response.textContent = 'Game over. You win!';
         document.getElementById('winImage').style.display = "block";
         restartBtn.style.display = "block";
+        rockBtn.classList.remove('grow');
+        paperBtn.classList.remove('grow');
+        scissorsBtn.classList.remove('grow');
 
     }
     if (computerScore == 5) {
         response.textContent = 'Game over. You lose!'
         document.getElementById('loseImage').style.display = "block";
         restartBtn.style.display = "block";
+        rockBtn.classList.remove('grow');
+        paperBtn.classList.remove('grow');
+        scissorsBtn.classList.remove('grow');
     }
 }
 
